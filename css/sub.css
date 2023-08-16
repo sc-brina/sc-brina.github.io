@@ -158,6 +158,39 @@
 }
 
 /* hongdae */
+#hongdae {
+  margin: 14em 0 8em;
+}
+
+#hongdae p {
+  margin-bottom: 2em;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#hongdae .img_area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#hongdae figure {
+  width: 30%;
+  margin-right: 3em;
+}
+
+#hongdae figure:last-child {
+  margin-right: 0;
+}
+
+#hongdae img {
+  width: 100%;
+}
+
+#hongdae #map {
+  width: calc(70% - 3em);
+  height: 56vh;
+}
 
 /* timing */
 #timing {

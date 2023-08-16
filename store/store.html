@@ -49,6 +49,10 @@
     integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
     crossorigin="anonymous"></script>
 
+  <!-- map -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=23349be5e487195112b551e3413717b2"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=LIBRARY"></script>
+
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -60,7 +64,7 @@
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
-  <script defer src="/js/sub.js"></script>
+  <script defer src="/js/store.js"></script>
 </head>
 
 <body>
@@ -85,11 +89,17 @@
     <!-- // header -->
 
     <!-- hongdae -->
-    <scetion id="hongdae">
+    <section id="hongdae">
       <div class="inner">
-        
+        <h3>HONGDAE MAIN STORE</h3>
+        <p>A급 상권지인 홍대 본사 대형 직영매장을 기반으로 가맹 사업에 필요한 교육 / 물류 시스템을 구축하고 있습니다.</p>
+        <div class="img_area">
+          <figure><img src="/img/img_store_01.jpg" alt="뉴욕 베이글 애비뉴 홍대 본점" /></figure>
+          <div id="map"></div>
+        </div>
+
       </div>
-    </scetion>
+    </section>
 
     <!-- footer -->
     <footer>
@@ -102,7 +112,7 @@
       </div>
     </footer>
     <!-- // footer -->
-    
+
   </div>
 
   <!-- to-top -->
