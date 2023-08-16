@@ -64,12 +64,50 @@
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
-  <script defer src="/js/script.js"></script>
+  <script defer src="/js/main.js"></script>
 </head>
 
 <body>
-  <div id="container">
-    <header>NewYork Bagel AVE</header>
+  <div id="wrapper" class="home">
+    <!-- header -->
+    <header>
+      <h1 class="logo">
+        <a href="/">
+          <img src="/img/logo.png" alt="NewYork Bagel AVE." />
+        </a>
+      </h1>
+      <nav>
+        <ul class="inner">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/about.html">ABOUT</a></li>
+          <li><a href="/menu.html">MENU</a></li>
+          <li><a href="/store.html">STORE</a></li>
+          <li><a href="/membership.html">가맹안내</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <section id="main">
+      <div class="inner swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure><img src="/img/main_01.jpg" alt="16시간의 저온 숙성을 거쳐 쫄깃한 식감을 가진 베이글" /></figure>
+            <h4><span>16시간 저온 숙성</span>을 거쳐 <br /> 쫄깃한 식감을 가진 베이글</h4>
+          </div>
+          <div class="swiper-slide">
+            <figure><img src="/img/main_02.jpg" alt="그릭 요거트가 더해진 7가지의 특별한 크림치즈" /></figure>
+            <h4><span>그릭 요거트</span>가 더해진 <br /> 7가지의 특별한 크림치즈</h4>
+          </div>
+          <div class="swiper-slide">
+            <figure><img src="/img/main_03.jpg" alt="" /></figure>
+            <h4>다양한 베이글과 속재료를 더해 <br /> 든든한 <span>베이글 샌드위치</span></h4>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
   </div>
 </body>
 
