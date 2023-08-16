@@ -168,14 +168,32 @@
   text-align: center;
 }
 
+#hongdae span {
+  position: relative;
+  display: block;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#hongdae span:before {
+  content: "";
+  position: absolute;
+  top: -1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 3em;
+  height: 1px;
+  background-color: rgba(0,0,0,0.6);
+}
+
 #hongdae .img_area {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #hongdae figure {
-  width: 30%;
+  height: 50vh;
   margin-right: 3em;
 }
 
@@ -184,12 +202,16 @@
 }
 
 #hongdae img {
-  width: 100%;
+  height: 100%;
+}
+
+#hongdae .map_wrap {
+  width: 60%;
 }
 
 #hongdae #map {
-  width: calc(70% - 3em);
-  height: 56vh;
+  width: 100%;
+  height: 50vh;
 }
 
 /* timing */
@@ -292,16 +314,20 @@
 /* contact */
 #contact .con_area {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #contact figure {
   width: 40%;
+  height: 50em;
   margin-right: 3em;
+  overflow: hidden;
 }
 
 #contact img {
-  width: 100%;
+  height: 100%;
 }
 
 #contact form {
@@ -326,11 +352,11 @@
 
 #contact textarea {
   width: 100%;
-  height: 16.4vh;
+  height: 10vh;
 }
 
 #contact .policy_note {
-  height: 14vh;
+  height: 10vh;
   padding: 0.6em;
   border: 1px solid #ccc;
   overflow-y: scroll;
