@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url(/css/common.css);
+
+/* menu */
+#menu {
+  margin: 12em 0 8em;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.category li {
+  position: relative;
+  margin-right: 3em;
+}
+
+.category li:last-child {
+  margin-right: 0;
+}
+
+.category li.on:after {
+  content: "";
+  position: absolute;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 110%;
+  height: 2px;
+  background-color: #965B39;
+}
+
+.category a {
+  position: relative;
+  font-size: 2rem;
+  color: #965B39;
+  opacity: 0.6;
+}
+
+.category a:before {
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: #965B39;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.category a:hover {
+  opacity: 1;
+}
+
+.category a:hover:before {
+  top: -0.6em;
+  opacity: 1;
+}
+
+.category li.on a {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product li {
+  width: calc((100% - 9em) / 4);
+  margin-right: 3em;
+}
+
+.product li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product li:nth-child(n + 5) {
+  margin-top: 4em;
+}
+
+.product figure {
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product p {
+  text-align: center;
+  color: #965B39;
+}
+
+.product h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4B2E1D;
+}

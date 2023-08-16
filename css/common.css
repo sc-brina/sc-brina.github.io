@@ -224,6 +224,11 @@ header nav a:hover {
     color: #ECE5D3;
 }
 
+header nav li.on a {
+    font-weight: 600;
+    color: #ECE5D3;
+}
+
 /* footer */
 footer {
     padding: 2em 0;
