@@ -34,7 +34,7 @@
 /* nybagel */
 #newyork {
   padding: 8em 0;
-  background-color: #F5F2E9;
+  background-color: #f4f4f4;
 }
 
 #nybagel video {
@@ -53,23 +53,23 @@
   margin: 14em 0 8em;
 }
 
-.category {
+#menu .category {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 6em;
 }
 
-.category li {
+#menu .category li {
   position: relative;
   margin-right: 3em;
 }
 
-.category li:last-child {
+#menu .category li:last-child {
   margin-right: 0;
 }
 
-.category li.on:after {
+#menu .category li.on:after {
   content: "";
   position: absolute;
   bottom: -0.2em;
@@ -78,17 +78,17 @@
   display: block;
   width: 110%;
   height: 2px;
-  background-color: #965B39;
+  background-color: #555;
 }
 
-.category a {
+#menu .category a {
   position: relative;
   font-size: 2rem;
-  color: #965B39;
+  color: #555;
   opacity: 0.6;
 }
 
-.category a:before {
+#menu .category a:before {
   content: "";
   position: absolute;
   top: -1.5em;
@@ -98,61 +98,63 @@
   width: 0.3em;
   height: 0.3em;
   border-radius: 50%;
-  background-color: #965B39;
+  background-color: #555;
   transition: all 0.5s;
   opacity: 0;
 }
 
-.category a:hover {
+#menu .category a:hover {
   opacity: 1;
 }
 
-.category a:hover:before {
+#menu .category a:hover:before {
   top: -0.6em;
   opacity: 1;
 }
 
-.category li.on a {
+#menu .category li.on a {
   font-weight: 600;
   opacity: 1;
 }
 
-.product {
+#menu .product {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.product li {
+#menu .product li {
   width: calc((100% - 9em) / 4);
   margin-right: 3em;
 }
 
-.product li:nth-child(4n) {
+#menu .product li:nth-child(4n) {
   margin-right: 0;
 }
 
-.product li:nth-child(n + 5) {
+#menu .product li:nth-child(n + 5) {
   margin-top: 4em;
 }
 
-.product figure {
+#menu .product figure {
   margin-bottom: 1em;
   overflow: hidden;
 }
 
-.product img {
+#menu .product img {
   width: 100%;
 }
 
-.product p {
+#menu .product p {
   text-align: center;
-  color: #965B39;
+  color: #555;
 }
 
-.product h5 {
+#menu .product h5 {
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  color: #4B2E1D;
+  color: #000;
 }
+
+/* hongdae */

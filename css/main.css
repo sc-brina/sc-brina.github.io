@@ -83,7 +83,7 @@ section p {
 /* street */
 #street {
   padding: 8em 0;
-  background-color: #F5F2E9;
+  background-color: #f4f4f4;
 }
 
 #street img {
@@ -139,7 +139,7 @@ section p {
   height: 15em;
   margin-right: 2em;
   border-radius: 50%;
-  background-color: #F5F2E9;
+  background-color: #f4f4f4;
 }
 
 #membership li:last-child {
@@ -152,7 +152,7 @@ section p {
 }
 
 #membership p {
-  color: #4B2E1D;
+  color: #000;
 }
 
 #membership strong {
@@ -162,7 +162,7 @@ section p {
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
-  color: #4B2E1D;
+  color: #000;
 }
 
 #membership span {
