@@ -1,9 +1,56 @@
 @charset "utf-8";
 @import url(/css/common.css);
 
+/* introduce */
+#introduce {
+  margin: 14em 0 8em;
+}
+
+#introduce p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* nybagel */
+#newyork figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#newyork .building {
+  margin-right: 3em;
+}
+
+#newyork img {
+  width: 20vw;
+}
+
+#newyork p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* nybagel */
+#newyork {
+  padding: 8em 0;
+  background-color: #F5F2E9;
+}
+
+#nybagel video {
+  display: block;
+  width: 70%;
+  margin: 0 auto 2em;
+}
+
+#nybagel p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 /* menu */
 #menu {
-  margin: 12em 0 8em;
+  margin: 14em 0 8em;
 }
 
 .category {
