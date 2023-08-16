@@ -2,7 +2,7 @@
 @import url(/css/common.css);
 
 #main {
-  margin: 2em 0 4em;
+  margin: 2em 0 6em;
 }
 
 #main .inner {
@@ -18,7 +18,7 @@
 
 #main .swiper-button-next:after,
 #main .swiper-button-prev:after {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 #main figure {
@@ -35,7 +35,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 
@@ -47,24 +47,23 @@
   width: 100%;
 }
 
-#main h4 {
+#main h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  font-family: "JejuMyeongjo";
   font-size: 5rem;
   text-align: center;
   line-height: 1.4;
   color: #fff;
 }
 
-#main h4 span {
+#main h2 span {
   position: relative;
 }
 
-#main h4 span:after {
+#main h2 span:after {
   content: "";
   position: absolute;
   left: 0;
@@ -72,4 +71,22 @@
   width: 100%;
   height: 1px;
   background-color: #fff;
+}
+
+/* street */
+#street h3 {
+  margin-bottom: 1em;
+  font-size: 3.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#street img {
+  width: 80%;
+  margin: 0 auto 2em;
+}
+
+#street p {
+  font-size: 2rem;
+  text-align: center;
 }

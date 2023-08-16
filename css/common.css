@@ -137,7 +137,7 @@ textarea,
 button,
 input {
     outline: 0;
-    font: 1.5rem "Lato", "Noto Sans KR", sans-serif;
+    font: 1.5rem "JejuMyeongjo", sans-serif;
 }
 
 .blind {
@@ -161,9 +161,10 @@ html {
 }
 
 body {
-    font-family: "Lato", "Noto Sans KR", sans-serif;
+    font-family: "JejuMyeongjo", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 1.4;
     color: #222;
     overflow-x: hidden;
 }
@@ -171,6 +172,11 @@ body {
 .inner {
     width: 80em;
     margin: 0 auto;
+}
+
+/* section */
+section {
+    margin-bottom: 6em;
 }
 
 /* header */
@@ -207,9 +213,4 @@ header nav a {
 
 header nav a:hover {
     color: #ECE5D3;
-}
-
-/* section */
-section {
-    margin-bottom: 4em;
 }
