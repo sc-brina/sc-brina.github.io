@@ -28,13 +28,19 @@
   <!-- reset -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
+
   <!-- lodash -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
     integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
     crossorigin="anonymous"></script>
+
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
     integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
@@ -42,10 +48,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
     integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
     crossorigin="anonymous"></script>
-  <!-- scrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-    crossorigin="anonymous"></script>
+
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -107,9 +114,9 @@
     <!-- street -->
     <section id="street">
       <div class="inner">
-        <h3>NewYork Bagel AVE.</h3>
-        <img src="/img/img_home_street.png" alt="뉴욕 거리" />
-        <p>
+        <h3 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">NewYork Bagel AVE.</h3>
+        <img src="/img/img_home_street.png" alt="뉴욕 거리" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" />
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           베이글의 성지인 뉴욕을 배경으로 뉴요커들의 아침을 책임지며, <br />
           여느 유럽 못지않게 다양한 명품 베이글 가게가 즐비한 거리를 모티브로 <br />
           한국의 실정에 적합하도록 기획하여 론칭한 브랜드입니다.</p>
@@ -120,21 +127,21 @@
     <!-- menu -->
     <section id="menu">
       <div class="inner">
-        <h3>MENU</h3>
+        <h3 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">MENU</h3>
         <ul>
-          <li>
+          <li data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">
             <a href="/menu/bagel.html">
               <figure><img src="/img/img_home_menu_01.jpg" alt="베이글" /></figure>
               <h4>베이글</h4>
             </a>
           </li>
-          <li>
+          <li data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
             <a href="/menu/cream.html">
               <figure><img src="/img/img_home_menu_02.jpg" alt="크림치즈" /></figure>
               <h4>크림치즈</h4>
             </a>
           </li>
-          <li>
+          <li data-aos="zoom-in" data-aos-delay="450" data-aos-duration="1000">
             <a href="/menu/sandwich.html">
               <figure><img src="/img/img_home_menu_03.jpg" alt="샌드위치" /></figure>
               <h4>샌드위치</h4>
@@ -148,31 +155,31 @@
     <!-- membership -->
     <section id="membership">
       <div class="inner">
-        <h3>MEMBERSHIP</h3>
-        <p>뉴욕 베이글 애비뉴는 가맹비를 받지 않고, <br /> 최소한의 비용으로 교육과 인테리어를 진행합니다.</p>
+        <h3 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">MEMBERSHIP</h3>
+        <p data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">뉴욕 베이글 애비뉴는 가맹비를 받지 않고, <br /> 최소한의 비용으로 교육과 인테리어를 진행합니다.</p>
         <ul>
-          <li>
+          <li data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
             <div>
               <img src="/img/ico_home_mem_01.png" alt="교육" />
               <p>교육</p>
               <strong>200만원</strong>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left" data-aos-delay="450" data-aos-duration="1000">
             <div>
               <img src="/img/ico_home_mem_02.png" alt="집기/장비" />
               <p>집기/장비</p>
               <strong>500만원</strong>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000">
             <div>
               <img src="/img/ico_home_mem_03.png" alt="물류" />
               <p>물류</p>
               <strong>30%</strong>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left" data-aos-delay="750" data-aos-duration="1000">
             <div>
               <img src="/img/ico_home_mem_04.png" alt="로열티" />
               <p>로열티</p>
@@ -184,6 +191,12 @@
       </div>
     </section>
     <!-- // membership -->
+
+    <section id="hongdae">
+      <div class="inner">
+        <h2><a href="/store/store.html">HONGDAE MAIN STORE</a></h2>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer>
@@ -198,6 +211,13 @@
     <!-- // footer -->
 
   </div>
+
+  <!-- to-top -->
+  <div id="to-top">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </div>
+  <!-- // to-top -->
+
 </body>
 
 </html>
