@@ -7,7 +7,7 @@
 }
 
 #introduce p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@
 }
 
 #newyork p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@
 }
 
 #nybagel p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -186,12 +186,13 @@
 }
 
 #menu .product p {
+  font-size: 1.6rem;
   text-align: center;
   color: #555;
 }
 
 #menu .product h5 {
-  font-size: 1.8rem;
+  font-size:2rem;
   font-weight: 600;
   text-align: center;
   color: #000;
@@ -204,7 +205,7 @@
 
 #hongdae p {
   margin-bottom: 2em;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -212,6 +213,7 @@
   position: relative;
   display: block;
   margin-bottom: 2em;
+  font-weight: 1.6rem;
   text-align: center;
 }
 
@@ -223,7 +225,7 @@
   transform: translateX(-50%);
   display: block;
   width: 3em;
-  height: 1px;
+  height: 0.1em;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
