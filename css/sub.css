@@ -11,6 +11,50 @@
   text-align: center;
 }
 
+/* ceo */
+#ceo {
+  padding: 8em 0;
+  background-color: #f4f4f4;
+}
+
+#ceo .ceo_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#ceo figure {
+  width: 30%;
+  margin-right: 3em;
+  opacity: 0.85;
+}
+
+#ceo img {
+  width: 100%;
+}
+
+#ceo .text_area {
+  width: calc(50% - 3em);
+}
+
+#ceo h4 {
+  margin-bottom: 2em;
+  font-size: 2.4rem;
+  word-break: keep-all;
+}
+
+#ceo li {
+  margin-bottom: 1em;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+#ceo li h5 {
+  font-weight: 600;
+  color: #333;
+}
+
 /* nybagel */
 #newyork figure {
   display: flex;
@@ -32,11 +76,6 @@
 }
 
 /* nybagel */
-#newyork {
-  padding: 8em 0;
-  background-color: #f4f4f4;
-}
-
 #nybagel video {
   display: block;
   width: 70%;
@@ -184,7 +223,7 @@
   display: block;
   width: 3em;
   height: 1px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #hongdae .img_area {
@@ -214,14 +253,52 @@
   height: 50vh;
 }
 
+/* strategy */
+#strategy {
+  margin: 14em 0 8em;
+}
+
+#strategy ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#strategy li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18em;
+  height: 18em;
+  margin-right: 3em;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+}
+
+#strategy li:last-child {
+  margin-right: 0;
+}
+
+#strategy img {
+  width: 30%;
+  margin: 0 auto 1.5em;
+}
+
+#strategy h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* timing */
 #timing {
-  margin: 14em 0 8em;
+  padding: 8em 0;
+  background-color: #f4f4f4;
 }
 
 #timing h4 {
   margin-bottom: 2em;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -248,51 +325,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 600;
 }
 
 #timing h5 {
   margin-top: 0.5em;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
 }
 
 #timing p {
   margin-top: 1em;
   opacity: 0.6;
-  text-align: center;
-}
-
-/* strategy */
-#strategy ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#strategy li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15em;
-  height: 15em;
-  margin-right: 3em;
-  border-radius: 50%;
-  background-color: #f4f4f4;
-}
-
-#strategy li:last-child {
-  margin-right: 0;
-}
-
-#strategy img {
-  width: 30%;
-  margin: 0 auto 1em;
-}
-
-#strategy h5 {
-  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -303,12 +349,17 @@
 }
 
 #cost table {
-  width: 20em;
+  width: 25vw;
   margin-right: 3em;
 }
 
 #cost table:last-child {
   margin-right: 0;
+}
+
+#cost table th,
+#cost table td {
+  font-size: 1.8rem;
 }
 
 /* contact */
@@ -342,17 +393,20 @@
 #contact h5 {
   display: block;
   margin-bottom: 0.5em;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 #contact input[type="text"],
 #contact input[type="tel"] {
   width: 100%;
+  font-size: 1.6rem;
 }
 
 #contact textarea {
   width: 100%;
   height: 10vh;
+  font-size: 1.6rem;
 }
 
 #contact .policy_note {
@@ -380,8 +434,13 @@
 #contact .policy label {
   margin-bottom: 0;
   margin-left: 0.3em;
+  font-size: 1.4rem;
   font-weight: 400;
   cursor: pointer;
+}
+
+#contact .policy input[type="checkbox"]:checked+label {
+  font-weight: 600;
 }
 
 #contact .btn_area {

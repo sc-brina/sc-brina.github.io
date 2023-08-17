@@ -42,10 +42,9 @@ table {
 
 table th,
 table td {
-    padding: 0.6em 0;
+    padding: 1em 0;
     border: 1px solid #ccc;
     vertical-align: middle;
-    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -134,8 +133,8 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.1em;
+    height: 1.1em;
 }
 
 input[type="checkbox"]:checked {
@@ -154,10 +153,6 @@ input[type="checkbox"]:checked:after {
     border: 0;
     border-radius: 2px;
     background: url(/img/ico_chk.svg) no-repeat center / 100%;
-}
-
-input[type="checkbox"]:checked+label {
-    font-weight: 600;
 }
 
 textarea {
@@ -238,7 +233,7 @@ header .logo {
 
 header .logo a {
     display: block;
-    width: 15em;
+    width: 17em;
     padding: 1em 0;
     margin: 0 auto;
 }
