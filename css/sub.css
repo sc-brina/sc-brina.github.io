@@ -40,13 +40,14 @@
 
 #ceo h4 {
   margin-bottom: 2em;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
   word-break: keep-all;
 }
 
 #ceo li {
   margin-bottom: 1em;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
