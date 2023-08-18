@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(/css/common.css);
 
 /* introduce */
 #introduce {
@@ -42,6 +41,7 @@
   margin-bottom: 2em;
   font-size: 2.2rem;
   font-weight: 600;
+  line-height: 1.5;
   word-break: keep-all;
 }
 
@@ -56,7 +56,7 @@
   color: #333;
 }
 
-/* nybagel */
+/* newyork */
 #newyork figure {
   display: flex;
   justify-content: center;
@@ -192,7 +192,7 @@
 }
 
 #menu .product h5 {
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
   color: #000;
@@ -265,14 +265,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #strategy li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18em;
-  height: 18em;
+  width: 17em;
+  height: 17em;
   margin-right: 3em;
   border-radius: 50%;
   background-color: #f4f4f4;
@@ -452,4 +453,107 @@
 
 #contact .btn {
   width: 100%;
+}
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+
+  /* layout */
+  .inner {
+    width: 90vw;
+  }
+
+  /* main */
+  #main .inner {
+    height: 40vh;
+  }
+
+  /* membership */
+  #membership li {
+    width: 13em;
+    height: 13em;
+  }
+
+  #membership img {
+    width: 25%;
+  }
+
+  /* hongdae */
+  #hongdae h2 a:after {
+    opacity: 1;
+  }
+
+  /* ceo */
+  #ceo figure {
+    width: 40%;
+  }
+
+  #ceo h4 br {
+    display: none;
+  }
+
+  /* newyork */
+  #newyork img {
+    width: 30vw;
+  }
+
+  /* hongdae */
+  #hongdae figure {
+    height: 45vh;
+  }
+
+  #hongdae #map {
+    height: 45vh;
+  }
+
+  /* strategy */
+  #strategy ul {
+    width: 37em;
+    margin: 0 auto;
+  }
+
+  #strategy li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #strategy li:nth-child(n + 3) {
+    margin-top: 3em;
+  }
+
+  #strategy img {
+    width: 25%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* layout */
+  html {
+    font-size: 9px;
+  }
+
+  /* section */
+  section {
+    margin-bottom: 6em;
+  }
+
+  /* ceo */
+  #ceo figure {
+    width: 45%;
+  }
+
+  /* menu */
+  #menu .product p {
+    font-size: 1.4rem;
+  }
+
+  #menu .product h5 {
+    font-size: 1.8rem;
+  }
+
+  .chart canvas {
+    width: 15em !important;
+    height: 15em !important;
+  }
 }
