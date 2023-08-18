@@ -268,6 +268,11 @@ header nav li.on a {
     color: #fff;
 }
 
+/* mobMenu */
+.mobMenu {
+    display: none;
+}
+
 /* footer */
 footer {
     padding: 2em 0;
@@ -337,4 +342,55 @@ footer p::before {
 
 #to-top span {
     font-size: 2.5rem;
+}
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+
+    /* layout */
+    .inner {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* layout */
+    html {
+        font-size: 9px;
+    }
+
+    .inner {
+        width: 95vw;
+    }
+
+    /* section */
+    section {
+        margin-bottom: 6em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    /* layout */
+    html {
+        font-size: 8px;
+    }
+
+    .inner {
+        width: 90vw;
+    }
+
+    /* header */
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    /* mobMenu */
+    .mobMenu {
+        display: block;
+        margin-left: 5vw;
+    }
+
 }

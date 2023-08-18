@@ -242,11 +242,6 @@ section p {
 /* tablet */
 @media screen and (max-width: 1200px) {
 
-  /* layout */
-  .inner {
-    width: 90vw;
-  }
-
   /* main */
   #main .inner {
     height: 40vh;
@@ -270,16 +265,6 @@ section p {
 
 @media screen and (max-width: 768px) {
 
-  /* layout */
-  html {
-    font-size: 9px;
-  }
-
-  /* section */
-  section {
-    margin-bottom: 6em;
-  }
-
   /* main */
   #main {
     margin: 13em 0 6em;
@@ -299,3 +284,4 @@ section p {
     margin-top: 3em;
   }
 }
+

@@ -457,12 +457,7 @@
 
 /* tablet */
 @media screen and (max-width: 1200px) {
-
-  /* layout */
-  .inner {
-    width: 90vw;
-  }
-
+  
   /* main */
   #main .inner {
     height: 40vh;
@@ -528,22 +523,25 @@
 
 @media screen and (max-width: 768px) {
 
-  /* layout */
-  html {
-    font-size: 9px;
-  }
-
-  /* section */
-  section {
-    margin-bottom: 6em;
-  }
-
   /* ceo */
   #ceo figure {
     width: 45%;
   }
 
+  #ceo h4 {
+    font-size: 2rem;
+  }
+
   /* menu */
+  #menu .product li {
+    width: calc((100% - 6em) / 4);
+    margin-right: 2em;
+  }
+
+  #menu .product li:nth-child(n + 5) {
+    margin-top: 2em;
+  }
+
   #menu .product p {
     font-size: 1.4rem;
   }
