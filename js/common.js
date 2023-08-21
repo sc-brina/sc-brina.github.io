@@ -9,7 +9,6 @@ const toTopEl = document.querySelector('#to-top');
 window.addEventListener('scroll', _.throttle(function () {
   //_.throttle(함수, 시간)
   //gsap.to(요소, 지속시간, 옵션)
-  console.log(window.scrollY);
   if (window.scrollY > 400) {
     gsap.to('#to-top', 0.2, {
       x: 0
