@@ -4,7 +4,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 var swiper = new Swiper(".swiper", {
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   loop: true,

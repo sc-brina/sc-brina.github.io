@@ -8,6 +8,7 @@
 #introduce p {
   font-size: 2rem;
   text-align: center;
+  word-break: keep-all;
 }
 
 /* ceo */
@@ -213,7 +214,7 @@
   position: relative;
   display: block;
   margin-bottom: 2em;
-  font-weight: 1.6rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
@@ -457,7 +458,7 @@
 
 /* tablet */
 @media screen and (max-width: 1200px) {
-  
+
   /* main */
   #main .inner {
     height: 40vh;
@@ -554,4 +555,220 @@
     width: 15em !important;
     height: 15em !important;
   }
+}
+
+
+@media screen and (max-width: 640px) {
+
+  /* introduce */
+  #introduce {
+    margin: 6.5em 0 4em;
+  }
+
+  /* ceo */
+  #ceo {
+    padding: 4em 0;
+  }
+
+  #ceo .ceo_area {
+    display: block;
+  }
+
+  #ceo figure {
+    width: 70%;
+    margin: 0 auto 2em;
+  }
+
+  #ceo .text_area {
+    width: 100%;
+  }
+
+  #ceo h4 {
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  #ceo li {
+    text-align: center;
+  }
+
+  /* newyork */
+  #newyork img {
+    width: calc((100% - 1em) / 2)
+  }
+
+  #newyork .building {
+    margin-right: 1em;
+  }
+
+  /* nybagel */
+  #nybagel video {
+    width: 100%;
+  }
+
+  /* menu */
+  #menu {
+    margin: 6.5em 0 4em;
+  }
+
+  #menu .category {
+    margin-bottom: 4em;
+  }
+
+  #menu .category a:before {
+    display: none;
+  }
+
+  #menu .product li {
+    width: calc((100% - 2em) / 2);
+    margin-right: 2em;
+  }
+
+  #menu .product li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #menu .product li:nth-child(n + 3) {
+    margin-top: 2em;
+  }
+
+  #menu .product p {
+    font-size: 1.6rem;
+  }
+
+  #menu .product h5 {
+    font-size: 2rem;
+  }
+
+  /* hongdae */
+  #hongdae {
+    margin: 6.5em 0 4em;
+  }
+
+  #hongdae h3 span {
+    margin: 0;
+  }
+
+  #hongdae h3 span:before {
+    display: none;
+  }
+
+  #hongdae .img_area {
+    display: block;
+  }
+
+  #hongdae figure {
+    width: 100%;
+    height: auto;
+    margin: 0 0 2em;
+  }
+
+  #hongdae img {
+    width: 100%;
+    height: auto;
+  }
+
+  #hongdae .map_wrap {
+    width: 100%;
+  }
+
+  /* strategy */
+  #strategy {
+    margin: 6.5em 0 4em;
+  }
+
+  #strategy ul {
+    width: 100%;
+  }
+
+  #strategy li {
+    width: 12em;
+    height: 12em;
+    margin-right: 2em;
+  }
+
+  #strategy li:nth-child(n+3) {
+    margin-top: 2em;
+  }
+
+  #strategy h5 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    word-break: keep-all;
+  }
+
+  /* timing */
+  #timing ul {
+    display: block;
+  }
+
+  #timing li {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  #timing li:last-child {
+    margin-bottom: 0;
+  }
+
+  #timing h4 {
+    word-break: keep-all;
+  }
+
+  #timing .chart {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* cost */
+  #cost .table_area {
+    display: block;
+  }
+
+  #cost table {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  #cost table:last-child {
+    margin-bottom: 0;
+  }
+
+  /* contact */
+  #contact .con_area {
+    display: block;
+  }
+
+  #contact figure {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  #contact img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
+
+  #contact form {
+    width: 100%;
+  }
+
+  #contact .policy_note h6,
+  #contact .policy_note li {
+    font-size: 1.4rem;
+  }
+
+  #contact .policy label {
+    font-size: 1.5rem;
+  }
+
 }

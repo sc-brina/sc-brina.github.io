@@ -30,3 +30,16 @@ toTopEl.addEventListener('click', function () {
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 // footer
+
+$(function() {
+  $(document).on("click", ".mobMenu", function() {
+    $("nav").fadeIn(200);
+    $("nav ul").addClass("on");
+  });
+
+  $(document).on("click", ".menuClose", function() {
+    $("nav").fadeOut(200);
+    $("nav ul").removeClass("on");
+  });
+})
+// mobile

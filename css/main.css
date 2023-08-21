@@ -285,3 +285,99 @@ section p {
   }
 }
 
+@media screen and (max-width: 640px) {
+
+  /* main */
+  #main {
+    margin: 6.5em 0 4em;
+  }
+
+  #main .inner {
+    height: 80vh;
+  }
+
+  #main img {
+    width: auto;
+    height: 100%;
+  }
+
+  #main h2 {
+    width: 65%;
+    font-size: 4rem;
+    word-break: keep-all;
+  }
+
+  #main h2 span {
+    font-weight: 600;
+  }
+
+  #main h2 span:after {
+    display: none;
+  }
+
+  /* street */
+  #street {
+    padding: 4em 0;
+  }
+
+  #street img {
+    width: 100%;
+  }
+
+  /* menu */
+  #menu ul {
+    display: block;
+  }
+
+  #menu li {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  #menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  #menu figure {
+    position: relative;
+    height: 20em;
+  }
+
+  #menu img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #menu h4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    color: #fff;
+  }
+
+  /* membership */
+  #membership li {
+    width: 12em;
+    height: 12em;
+    margin-right: 2em;
+  }
+
+  #membership li:nth-child(n+3) {
+    margin-top: 2em;
+  }
+
+  /* hongdae */
+  #hongdae h2 a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+  }
+}
