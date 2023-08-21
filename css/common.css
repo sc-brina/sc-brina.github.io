@@ -454,6 +454,10 @@ footer p::before {
         display: block;
     }
 
+    .mobMenu span {
+        color: #000;
+    }
+
     .menuClose {
         position: absolute;
         top: 1em;

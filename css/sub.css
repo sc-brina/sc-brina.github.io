@@ -291,7 +291,7 @@
 
 #strategy h5 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -647,6 +647,7 @@
 
   #hongdae h3 span {
     margin: 0;
+    font-size: inherit;
   }
 
   #hongdae h3 span:before {
@@ -691,14 +692,21 @@
     margin-top: 2em;
   }
 
+  #strategy img {
+    width: 30%;
+  }
+
   #strategy h5 {
-    width: 90%;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     word-break: keep-all;
   }
 
   /* timing */
+  #timing {
+    padding: 4em 0;
+  }
+
   #timing ul {
     display: block;
   }
@@ -762,6 +770,12 @@
     width: 100%;
   }
 
+  #contact input[type="text"],
+  #contact input[type="tel"],
+  #contact textarea {
+      font-size: 1.8rem;
+  }
+
   #contact .policy_note h6,
   #contact .policy_note li {
     font-size: 1.4rem;
@@ -771,4 +785,7 @@
     font-size: 1.5rem;
   }
 
+  #contact .btn {
+    font-size: 2rem;
+  }
 }

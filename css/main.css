@@ -293,7 +293,7 @@ section p {
   }
 
   #main .inner {
-    height: 80vh;
+    height: 60vh;
   }
 
   #main img {
@@ -350,6 +350,11 @@ section p {
     transform: translate(-50%, -50%);
   }
 
+  #menu a:hover img {
+    transform: translate(-50%, -50%);
+    transition: all 0s;
+  }
+
   #menu h4 {
     position: absolute;
     left: 0;
@@ -373,6 +378,12 @@ section p {
   }
 
   /* hongdae */
+  #hongdae {
+    background-attachment: inherit;
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
   #hongdae h2 a {
     display: block;
     width: 80%;
