@@ -258,9 +258,33 @@ section p {
   }
 
   /* hongdae */
+  #hongdae {
+    background-attachment: inherit;
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
   #hongdae h2 a:after {
     opacity: 1;
   }
+}
+
+@media screen and (max-width:820px) {
+
+  /* membership */
+  #membership ul {
+    width: 29em;
+    margin: 2em auto 0;
+  }
+
+  #membership li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #membership li:nth-child(n + 3) {
+    margin-top: 3em;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -378,12 +402,6 @@ section p {
   }
 
   /* hongdae */
-  #hongdae {
-    background-attachment: inherit;
-    background-size: 100%;
-    background-position: 0 0;
-  }
-
   #hongdae h2 a {
     display: block;
     width: 80%;

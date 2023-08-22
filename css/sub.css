@@ -160,7 +160,7 @@
 
 #menu .product {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
@@ -228,6 +228,16 @@
   width: 3em;
   height: 0.1em;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hongdae h3 span {
+  display: inline-block;
+  margin: 0;
+  font-size: inherit;
+}
+
+#hongdae h3 span:before {
+  display: none;
 }
 
 #hongdae .img_area {
@@ -493,6 +503,11 @@
     width: 30vw;
   }
 
+  /* menu */
+  #menu .category a:before {
+    display: none;
+  }
+
   /* hongdae */
   #hongdae figure {
     height: 45vh;
@@ -518,6 +533,12 @@
 
   #strategy img {
     width: 25%;
+  }
+
+  /* timing */
+  .chart canvas {
+    width: 14em !important;
+    height: 14em !important;
   }
 
 }
@@ -550,13 +571,7 @@
   #menu .product h5 {
     font-size: 1.8rem;
   }
-
-  .chart canvas {
-    width: 15em !important;
-    height: 15em !important;
-  }
 }
-
 
 @media screen and (max-width: 640px) {
 
@@ -615,10 +630,6 @@
     margin-bottom: 4em;
   }
 
-  #menu .category a:before {
-    display: none;
-  }
-
   #menu .product li {
     width: calc((100% - 2em) / 2);
     margin-right: 2em;
@@ -643,15 +654,6 @@
   /* hongdae */
   #hongdae {
     margin: 6.5em 0 4em;
-  }
-
-  #hongdae h3 span {
-    margin: 0;
-    font-size: inherit;
-  }
-
-  #hongdae h3 span:before {
-    display: none;
   }
 
   #hongdae .img_area {
@@ -773,7 +775,7 @@
   #contact input[type="text"],
   #contact input[type="tel"],
   #contact textarea {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   #contact .policy_note h6,
