@@ -36,10 +36,11 @@ table {
 
 table th,
 table td {
-    padding: 1em 0;
+    padding: 1em;
     border: 1px solid #ccc;
     vertical-align: middle;
     text-align: center;
+    word-break: keep-all;
 }
 
 table th {

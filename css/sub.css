@@ -46,13 +46,7 @@
   word-break: keep-all;
 }
 
-#ceo li {
-  margin-bottom: 1em;
-  font-size: 1.8rem;
-  line-height: 1.5;
-}
-
-#ceo li h5 {
+#ceo h5 span {
   font-weight: 600;
   color: #333;
 }
@@ -358,18 +352,8 @@
 }
 
 /* cost */
-#cost .table_area {
-  display: flex;
-  justify-content: center;
-}
-
 #cost table {
-  width: 25vw;
-  margin-right: 3em;
-}
-
-#cost table:last-child {
-  margin-right: 0;
+  width: 100%;
 }
 
 #cost table th,
