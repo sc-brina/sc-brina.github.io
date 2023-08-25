@@ -5,40 +5,41 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 AOS.init();
 // aos
 
-const toTopEl = document.querySelector('#to-top');
-window.addEventListener('scroll', _.throttle(function () {
-  //_.throttle(함수, 시간)
-  //gsap.to(요소, 지속시간, 옵션)
-  if (window.scrollY > 400) {
-    gsap.to('#to-top', 0.2, {
-      x: 0
-    });
-  } else {
-    gsap.to('#to-top', 0.2, {
-      x: 100
-    });
-  }
-}, 300));
-toTopEl.addEventListener('click', function () {
-  gsap.to(window, 0.5, {
-    scrollTo: 0
+$(function() {
+  $(document).on("mouseover", ".nav > li", function() {
+    $(this).find(".sub").show();
   });
-});
-// to-top
+
+  $(document).on("mouseout", ".nav > li", function() {
+    $(this).find(".sub").hide();
+  });
+})
+// header
 
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 // footer
 
-$(function() {
-  $(document).on("click", ".mobMenu", function() {
-    $("nav").fadeIn(200);
-    $("nav ul").addClass("on");
-  });
+(function () {
+  emailjs.init("k99m-qBosrHHTUaBS");
+})();
 
-  $(document).on("click", ".menuClose", function() {
-    $("nav").fadeOut(200);
-    $("nav ul").removeClass("on");
-  });
-})
-// mobile
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      emailjs.sendForm("service_gz4h42j", "template_onav8vh", this).then(
+        function () {
+          console.log("SUCCESS!");
+          alert("메일 전송이 완료되었습니다. 😄");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+          alert("메일 전송이 실패했습니다. 😞");
+        }
+      );
+    });
+};
+// mail

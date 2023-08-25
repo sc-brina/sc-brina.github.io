@@ -60,94 +60,123 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- jsEmail -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
   <!-- style -->
   <link rel="stylesheet" href="/css/common.css" />
   <link rel="stylesheet" href="/css/sub.css" />
-  <link rel="stylesheet" href="/css/reactive.css" />
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
+  <script defer src="/js/story.js"></script>
 </head>
 
 <body>
 
-  <div id="wrapper" class="bagel">
+  <div id="wrapper" class="menu">
     <!-- header -->
-    <header>
-      <h1 class="logo">
-        <div class="mobMenu">
-          <button type="button">
-            <span class="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-        <a href="/">
-          <img src="/img/logo.png" alt="NewYork Bagel AVE." />
-        </a>
-      </h1>
-      <nav>
-        <ul class="inner">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/about/about.html">ABOUT</a></li>
-          <li class="on"><a href="/menu/bagel.html">MENU</a></li>
-          <li><a href="/store/store.html">STORE</a></li>
-          <li><a href="/membership/membership.html">가맹안내</a></li>
-        </ul>
-        <button type="button" class="menuClose">
-          <span class="material-symbols-outlined">close</span>
-        </button>
-      </nav>
-    </header>
-    <!-- // header -->
-
-    <!-- menu -->
-    <section id="menu">
+    <header class="move-down">
       <div class="inner">
-        <ul class="category">
-          <li><a href="/menu/bagel.html">Bagel</a></li>
-          <li class="on"><a href="/menu/cream.html">Cream Cheese</a></li>
-          <li><a href="/menu/sandwich.html">Sandwich</a></li>
+        <ul class="nav">
+          <li><a href="/story/story.html">브랜드 스토리</a></li>
+          <li>
+            <a href="/menu/bagel.html">상품 안내</a>
+            <ul class="sub">
+              <li><a href="/menu/bagel.html">베이글</a></li>
+              <li><a href="/menu/cream.html">크림치즈</a></li>
+              <li><a href="/menu/sandwich.html">샌드위치</a></li>
+              <li><a href="/menu/drink.html">커피/음료</a></li>
+            </ul>
+          </li>
+          <li><a href="/store/store.html">매장 안내</a></li>
+          <li><a href="/faq/faq.html">FAQ</a></li>
         </ul>
-        <h3>크림치즈</h3>
-        <ul class="product">
-          <li>
-            <figure><img src="/img/img_cream_plain.jpg" alt="플레인"></figure>
-            <p>플레인</p>
-            <h5>Plain</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_lemon.jpg" alt="레몬"></figure>
-            <p>레몬</p>
-            <h5>Lemon</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_pecan.jpg" alt="메이플 피칸"></figure>
-            <p>메이플 피칸</p>
-            <h5>Maple Pecan</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_spring.jpg" alt="스프링 어니언"></figure>
-            <p>스프링 어니언</p>
-            <h5>Spring Onion</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_truffle.jpg" alt="트러플"></figure>
-            <p>트러플</p>
-            <h5>Truffle</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_basil.jpg" alt="바질"></figure>
-            <p>바질</p>
-            <h5>Basil</h5>
-          </li>
-          <li>
-            <figure><img src="/img/img_cream_blueberry.jpg" alt="블루베리"></figure>
-            <p>블루베리</p>
-            <h5>Blueberry</h5>
+        <h1 class="logo">
+          <a href="/">
+            <img src="/img/logo_wh.png" alt="뉴욕 베이글 애비뉴" />
+          </a>
+        </h1>
+        <ul class="tnb">
+          <li><a href="/membership/membership.html">협력사 상담</a></li>
+          <li><a href="/membership/partner.html">제안</a></li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/ny_bagel_ave/" target="_blank">
+              <img src="/img/ico_instagram.png" alt="인스타그램" />
+            </a>
           </li>
         </ul>
       </div>
+    </header>
+    <!-- // header -->
+
+    <!-- menuBnr -->
+    <section id="menuBnr">
+      <div class="inner">
+        <div class="bnrText">
+          <p>상품 안내</p>
+          <h3>Product Information</h3>
+        </div>
+      </div>
     </section>
-    <!-- // menu -->
+    <!-- // menuBnr -->
+
+    <!-- menuBtn -->
+    <section id="menuBtn">
+      <ul class="inner">
+        <li><a href="/menu/bagel.html">Bagel</a></li>
+        <li class="on"><a href="/menu/cream.html">Cream Cheese</a></li>
+        <li><a href="/menu/sandwich.html">Sandwich</a></li>
+        <li><a href="/menu/drink.html">Coffee/Drink</a></li>
+      </ul>
+    </section>
+    <!-- // menuBtn -->
+
+    <!-- menuList -->
+    <section id="menuList">
+      <ul class="inner">
+        <li>
+          <figure><img src="/img/img_cream_plain.jpg" alt="플레인"></figure>
+          <p>플레인</p>
+          <h5>Plain</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_basil.jpg" alt="바질"></figure>
+          <p>바질</p>
+          <h5>Basil</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_spring.jpg" alt="스프링 어니언"></figure>
+          <p>스프링 어니언</p>
+          <h5>Spring Onion</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_lemon.jpg" alt="레몬"></figure>
+          <p>레몬</p>
+          <h5>Lemon</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_blueberry.jpg" alt="블루베리"></figure>
+          <p>블루베리</p>
+          <h5>Blueberry</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_truffle.jpg" alt="트러플"></figure>
+          <p>트러플</p>
+          <h5>Truffle</h5>
+        </li>
+        <li>
+          <figure><img src="/img/img_cream_pecan.jpg" alt="메이플 피칸"></figure>
+          <p>메이플 피칸</p>
+          <h5>Maple Pecan</h5>
+        </li>
+      </ul>
+    </section>
+    <!-- // menuList -->
 
     <!-- footer -->
     <footer>
@@ -161,14 +190,22 @@
     </footer>
     <!-- // footer -->
 
+    <!-- bottomBar -->
+    <div id="bottomBar">
+      <div class="inner">
+        <h3>가맹문의</h3>
+        <form id="contact-form">
+          <input type="text" placeholder="이름" id="contactName" required />
+          <input type="tel" placeholder="연락처" id="contactTel" required />
+          <input type="text" placeholder="희망지역" id="contactAddr" required />
+          <button type="submit" class="btn">문의하기</button>
+        </form>
+      </div>
+    </div>
+    <!-- // bottomBar -->
+
   </div>
 
-  <!-- to-top -->
-  <div id="to-top">
-    <span class="material-symbols-outlined">arrow_upward</span>
-  </div>
-  <!-- // to-top -->
 </body>
-
 
 </html>
