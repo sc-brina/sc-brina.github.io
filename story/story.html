@@ -78,6 +78,16 @@
 
 <body>
 
+  <!-- loading -->
+  <div id="loading">
+    <div class="loadingio-spinner-rolling">
+      <div class="load">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- // loading -->
+
   <div id="wrapper" class="story">
     <!-- header -->
     <header class="move-down">
@@ -119,7 +129,7 @@
       <div class="inner">
         <div class="bnrText">
           <p>브랜드 스토리</p>
-        <h3>Brand Story</h3>
+          <h3>Brand Story</h3>
         </div>
       </div>
     </section>
@@ -149,7 +159,8 @@
         </p>
         <p>
           <span>Using fresh ingredients,</span> a professional baker carefully selected a simple meal or brunch. <br />
-          New York bagels and sandwiches will bring you a <span>taste and atmosphere of authentic New York bagels.</span>
+          New York bagels and sandwiches will bring you a <span>taste and atmosphere of authentic New York
+            bagels.</span>
         </p>
         <p>
           New York Bagel AVE. delivers the taste and atmosphere of New York based on its <br />
@@ -164,19 +175,28 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="/img/img_home_main_01.jpg" alt="" />
+            <img src="/img/img_bagel_plain.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/img/img_home_main_01.jpg" alt="" />
+            <img src="/img/img_bagel_everything.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/img/img_home_main_01.jpg" alt="" />
+            <img src="/img/img_bagel_olive.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/img/img_home_main_01.jpg" alt="" />
+            <img src="/img/img_bagel_jalapenos.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="/img/img_home_main_01.jpg" alt="" />
+            <img src="/img/img_cream_plain.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/img_cream_basil.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/img_cream_spring.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/img_cream_lemon.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -199,12 +219,14 @@
     <!-- bottomBar -->
     <div id="bottomBar">
       <div class="inner">
-        <h3>가맹문의</h3>
+        <h3>협력사 상담</h3>
         <form id="contact-form">
-          <input type="text" placeholder="이름" id="contactName" required />
-          <input type="tel" placeholder="연락처" id="contactTel" required />
-          <input type="text" placeholder="희망지역" id="contactAddr" required />
-          <button type="submit" class="btn">문의하기</button>
+          <input type="hidden" name="contact_number" />
+          <input type="text" placeholder="이름" id="contactName" name="contactName" required />
+          <input type="tel" placeholder="연락처" id="contactTel" name="contactTel" required />
+          <input type="text" placeholder="이메일" id="contactMail" name="contactMail" required />
+          <input type="text" placeholder="희망지역" id="contactAddr" name="contactAddr" required />
+          <button type="submit" value="Send" class="btn">문의하기</button>
         </form>
       </div>
     </div>

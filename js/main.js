@@ -21,8 +21,8 @@ var swiper = new Swiper(".mainSwiper", {
     disableOnInteraction: false,
   },
   loop: true,
-  loopAdditionalSlides : 1,
-  threshold:100,
+  loopAdditionalSlides: 1,
+  threshold: 100,
   effect: "fade",
   speed: 300,
   pagination: {

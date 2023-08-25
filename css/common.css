@@ -197,13 +197,65 @@ body {
 }
 
 .inner {
-    width: 60vw;
+    width: 70vw;
     margin: 0 auto;
 }
 
 /* section */
 section {
     margin-bottom: 6em;
+}
+
+/* loading */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.loadingio-spinner-rolling {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translateX( -50%);
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+}
+
+@keyframes load {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.load {
+    width: 100%;
+    height: 100%;
+}
+
+.load div {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 10px solid #00690f;
+    border-top-color: transparent;
+    border-radius: 50%;
+    box-sizing: content-box;
+    animation: load 1.5s linear infinite;
 }
 
 /* btn */
@@ -421,4 +473,13 @@ footer p::before {
 
 #bottomBar button {
     margin-left: 0.5em;
+}
+
+/* ractive */
+@media screen and (max-width: 1400px) {
+
+    /* layout */
+    .inner {
+        width: 90vw;
+    }
 }

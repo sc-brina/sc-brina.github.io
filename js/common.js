@@ -29,15 +29,16 @@ window.onload = function () {
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
       event.preventDefault();
+      $("#loading").show();
       this.contact_number.value = (Math.random() * 100000) | 0;
-      emailjs.sendForm("service_gz4h42j", "template_onav8vh", this).then(
+      emailjs.sendForm("service_gz4h42j", "contact_basic", this).then(
         function () {
-          console.log("SUCCESS!");
-          alert("메일 전송이 완료되었습니다. 😄");
+          alert("협력사 상담이 접수 되었습니다.");
+          $("#loading").hide();
         },
         function (error) {
-          console.log("FAILED...", error);
-          alert("메일 전송이 실패했습니다. 😞");
+          alert("협력사 상담 요청이 실패했습니다. 다시 시도해주세요.");
+          $("#loading").hide();
         }
       );
     });

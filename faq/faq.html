@@ -73,10 +73,19 @@
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
-  <script defer src="/js/story.js"></script>
 </head>
 
 <body>
+
+  <!-- loading -->
+  <div id="loading">
+    <div class="loadingio-spinner-rolling">
+      <div class="load">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- // loading -->
 
   <div id="wrapper" class="faq">
     <!-- header -->
@@ -132,7 +141,7 @@
           <colgroup>
             <col width="10%" />
             <col width="" />
-            <col width="10%" />
+            <col width="15%" />
             <col width="10%" />
           </colgroup>
           <thead>
@@ -171,12 +180,14 @@
     <!-- bottomBar -->
     <div id="bottomBar">
       <div class="inner">
-        <h3>가맹문의</h3>
+        <h3>협력사 상담</h3>
         <form id="contact-form">
-          <input type="text" placeholder="이름" id="contactName" required />
-          <input type="tel" placeholder="연락처" id="contactTel" required />
-          <input type="text" placeholder="희망지역" id="contactAddr" required />
-          <button type="submit" class="btn">문의하기</button>
+          <input type="hidden" name="contact_number" />
+          <input type="text" placeholder="이름" id="contactName" name="contactName" required />
+          <input type="tel" placeholder="연락처" id="contactTel" name="contactTel" required />
+          <input type="text" placeholder="이메일" id="contactMail" name="contactMail" required />
+          <input type="text" placeholder="희망지역" id="contactAddr" name="contactAddr" required />
+          <button type="submit" value="Send" class="btn">문의하기</button>
         </form>
       </div>
     </div>

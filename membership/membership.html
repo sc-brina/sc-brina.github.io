@@ -73,10 +73,19 @@
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
-  <script defer src="/js/story.js"></script>
 </head>
 
 <body>
+
+  <!-- loading -->
+  <div id="loading">
+    <div class="loadingio-spinner-rolling">
+      <div class="load">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- // loading -->
 
   <div id="wrapper" class="membership">
     <!-- header -->
@@ -133,19 +142,19 @@
           <li>
             <div>
               <img src="/img/ico_strategy_01.png" alt="다양하고 경쟁력 있는 베이글 가격과 퀄리티" />
-              <h5>다양하고 경쟁력 있는 <br /> 베이글 가격과 퀄리티</h5>
+              <h5>다양하고 경쟁력 있는 <br /> 베이글 <span>가격과 퀄리티</span></h5>
             </div>
           </li>
           <li>
             <div>
               <img src="/img/ico_strategy_02.png" alt="본사 시스템을 통한 베이글 판매 편의성" />
-              <h5>본사 시스템을 통한 <br /> 베이글 판매 편의성</h5>
+              <h5>본사 시스템을 통한 <br /> 베이글 <span>판매 편의성</span></h5>
             </div>
           </li>
           <li>
             <div>
               <img src="/img/ico_strategy_03.png" alt="초기 투자비용 최소화 (인테리어/설비 직영 공사)" />
-              <h5>초기 투자비용 최소화 <br /> (인테리어/설비 직영)</h5>
+              <h5>초기 <span>투자비용 최소화</span> <br /> (인테리어/설비 직영)</h5>
             </div>
           </li>
           <li>
@@ -259,15 +268,19 @@
           <ul>
             <li>
               <label for="contactName">이름</label>
-              <input name="contactName" id="contactName" type="text" placeholder="성함을 입력해주세요." />
+              <input name="contactName" id="contactName" type="text" placeholder="성함을 입력해주세요." required />
             </li>
             <li>
               <label for="contactTel">연락처</label>
-              <input name="contactTel" id="contactTel" type="tel" placeholder="휴대폰 번호를 입력해주세요." />
+              <input name="contactTel" id="contactTel" type="tel" placeholder="연락처를 입력해주세요." required />
+            </li>
+            <li>
+              <label for="contactMail">이메일</label>
+              <input name="contactMail" id="contactMail" type="text" placeholder="이메일 주소를 입력해주세요." required />
             </li>
             <li>
               <label for="contactAddr">희망지역</label>
-              <input name="contactAddr" id="contactAddr" type="text" placeholder="가맹희망지역을 입력해주세요." />
+              <input name="contactAddr" id="contactAddr" type="text" placeholder="가맹희망지역을 입력해주세요." required />
             </li>
             <li>
               <label for="contactText">문의내용</label>
@@ -390,7 +403,7 @@
             </li>
           </ul>
           <div class="btn_area">
-            <button type="submit" value="Send" class="btn">문의하기</button>
+            <button type="submit" value="Send" class="btn btn_submit">문의하기</button>
           </div>
         </form>
       </div>
@@ -408,20 +421,6 @@
       </div>
     </footer>
     <!-- // footer -->
-
-    <!-- bottomBar -->
-    <div id="bottomBar">
-      <div class="inner">
-        <h3>협력사 상담</h3>
-        <form id="contact-form">
-          <input type="text" placeholder="이름" id="contactName" required />
-          <input type="tel" placeholder="연락처" id="contactTel" required />
-          <input type="text" placeholder="희망지역" id="contactAddr" required />
-          <button type="submit" class="btn">문의하기</button>
-        </form>
-      </div>
-    </div>
-    <!-- // bottomBar -->
 
   </div>
 

@@ -73,10 +73,20 @@
 
   <!-- script -->
   <script defer src="/js/common.js"></script>
-  <script defer src="/js/story.js"></script>
+  <script defer src="/js/partner.js"></script>
 </head>
 
 <body>
+
+  <!-- loading -->
+  <div id="loading">
+    <div class="loadingio-spinner-rolling">
+      <div class="load">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!-- // loading -->
 
   <div id="wrapper" class="partner">
     <!-- header -->
@@ -125,23 +135,27 @@
     </section>
     <!-- // partBnr -->
 
-    <!-- memContact -->
-    <section id="memContact">
+    <!-- partContact -->
+    <section id="partContact">
       <div class="inner">
-        <h4>문의</h4>
-        <form id="contact-form">
+        <form id="contact-form-p">
+          <input type="hidden" name="contact_number" />
           <ul>
             <li>
               <label for="contactName">이름</label>
-              <input name="contactName" id="contactName" type="text" placeholder="성함을 입력해주세요." />
+              <input name="contactPName" id="contactPName" type="text" placeholder="성함을 입력해주세요." />
             </li>
             <li>
               <label for="contactTel">연락처</label>
-              <input name="contactTel" id="contactTel" type="tel" placeholder="휴대폰 번호를 입력해주세요." />
+              <input name="contactPTel" id="contactPTel" type="tel" placeholder="연락처를 입력해주세요." />
+            </li>
+            <li>
+              <label for="contactTel">이메일</label>
+              <input name="contactPMail" id="contactPMail" type="tel" placeholder="이메일 주소를 입력해주세요." />
             </li>
             <li>
               <label for="conText">문의내용</label>
-              <textarea name="conText" id="conText" placeholder="문의내용을 입력해주세요."></textarea>
+              <textarea name="contactPText" id="contactPText" placeholder="문의내용을 입력해주세요."></textarea>
             </li>
             <li class="policy">
               <h5>개인정보처리방침</h5>
@@ -265,7 +279,8 @@
         </form>
       </div>
     </section>
-    <!-- memContact -->
+    <!-- partContact -->
+
     <!-- footer -->
     <footer>
       <div class="inner">
@@ -277,20 +292,6 @@
       </div>
     </footer>
     <!-- // footer -->
-
-    <!-- bottomBar -->
-    <div id="bottomBar">
-      <div class="inner">
-        <h3>가맹문의</h3>
-        <form id="contact-form">
-          <input type="text" placeholder="이름" id="contactName" required />
-          <input type="tel" placeholder="연락처" id="contactTel" required />
-          <input type="text" placeholder="희망지역" id="contactAddr" required />
-          <button type="submit" class="btn">문의하기</button>
-        </form>
-      </div>
-    </div>
-    <!-- // bottomBar -->
 
   </div>
 
