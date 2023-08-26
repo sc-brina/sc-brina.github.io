@@ -197,7 +197,7 @@ body {
 }
 
 .inner {
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -222,7 +222,7 @@ section {
     position: absolute;
     top: 40vh;
     left: 50%;
-    transform: translateX( -50%);
+    transform: translateX(-50%);
     display: inline-block;
     width: 10em;
     height: 10em;
@@ -281,7 +281,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    padding: 1.8em 0;
+    padding: 2em 0;
     transition: all 0.3s;
     z-index: 99;
 }
@@ -292,7 +292,7 @@ header.move-down {
     transition: all 0.3s;
 }
 
-header .inner {
+header .navMenu {
     position: relative;
     display: flex;
     align-items: center;
@@ -394,6 +394,10 @@ header .tnb li.instagram img {
 }
 
 /* mobMenu */
+.mobNavBg {
+    display: none;
+}
+
 .mobMenu {
     display: none;
 }
@@ -405,7 +409,7 @@ header .tnb li.instagram img {
 /* footer */
 footer {
     padding: 2em 0 8em;
-    background-color: #F5F0E7;
+    background-color: #eee;
 }
 
 footer li {
@@ -481,5 +485,96 @@ footer p::before {
     /* layout */
     .inner {
         width: 90vw;
+    }
+
+    /* header */
+    header .logo img {
+        width: 20vw;
+    }
+
+    header .nav>li {
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* layout */
+    html {
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+
+    /* layout */
+    html {
+        font-size: 8px;
+    }
+
+    .inner {
+        width: 95vw;
+    }
+
+    /* header */
+    header .nav,
+    header .tnb {
+        display: none;
+    }
+
+    header .mobNavBg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    header .navMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 70%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    header .nav>li>a {
+        color: #000;
+    }
+
+    header .tnb a {
+        color: #000;
+    }
+
+    /* mobMenu */
+    .mobMenu {
+        position: absolute;
+        top: 50%;
+        left: 2.5vw;
+        transform: translateY(-50%);
+        display: block;
+    }
+
+    .mobMenu span {
+        color: #fff;
+    }
+
+    .menuClose {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        display: block;
+    }
+
+    .menuClose span {
+        font-size: 4rem;
+        color: #fff;
     }
 }

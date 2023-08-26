@@ -43,3 +43,25 @@
 #main .swiper-pagination-bullet-active {
   background-color: #00690F;
 }
+
+@media screen and (max-width: 1400px) {
+  /* main */
+  #main {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* main */
+  #main {
+    height: 45vh;
+  }
+
+  #main .swiper-horizontal>.swiper-pagination-bullets,
+  #main .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #main .swiper-pagination-custom,
+  #main .swiper-pagination-fraction {
+    bottom: -2vh;
+  }
+}

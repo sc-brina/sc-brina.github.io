@@ -5,16 +5,11 @@
   position: relative;
   width: 100%;
   height: 40vh;
-  margin-top: 7em;
-}
-
-#storyBnr .inner {
-  position: relative;
-  height: 100%;
+  margin-top: 5em;
   background: url(/img/img_home_main_01.jpg) no-repeat center / cover;
 }
 
-#storyBnr .inner:after {
+#storyBnr:after {
   content: "";
   position: absolute;
   top: 0;
@@ -25,11 +20,17 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+#storyBnr .inner {
+  position: relative;
+  height: 100%;
+}
+
 #storyBnr .bnrText {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 3;
 }
 
@@ -41,7 +42,7 @@
 }
 
 #storyBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -141,6 +142,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   z-index: 3;
 }
@@ -153,7 +155,7 @@
 }
 
 #menuBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -264,14 +266,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 3;
-}
-
-#storeBnr .bnrText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #storeBnr p {
@@ -282,7 +278,7 @@
 }
 
 #storeBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -359,14 +355,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 3;
-}
-
-#faqBnr .bnrText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #faqBnr p {
@@ -377,7 +367,7 @@
 }
 
 #faqBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -443,14 +433,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 3;
-}
-
-#memBnr .bnrText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #memBnr p {
@@ -461,17 +445,34 @@
 }
 
 #memBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
 }
 
-#memStrategy h4 {
-  margin-bottom: 1em;
-  font-size: 2.8rem;
+#memBtn {
+  margin-bottom: 3em;
+}
+
+#memBtn ul {
+  display: flex;
+  align-items: center;
+}
+
+#memBtn li {
+  width: calc(100% / 3);
+  padding-bottom: 0.4em;
+  font-size: 2.6rem;
   font-weight: 500;
   text-align: center;
+  border-bottom: 3px solid #ccc;
+  cursor: pointer;
+}
+
+#memBtn li.on {
+  border-color: #00690F;
+  font-weight: 600;
 }
 
 #memStrategy ul {
@@ -482,12 +483,26 @@
 }
 
 #memStrategy li {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 13vw;
+  width: calc((100% - 6em) / 4);
+  height: 30vh;
   margin-right: 2em;
-  border-radius: 50%;
+  background-color: #F9F7F2;
+}
+
+#memStrategy li:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 90%;
+  height: 90%;
+  border: 1px solid #E2D8BE;
 }
 
 #memStrategy li:last-child {
@@ -504,11 +519,9 @@
   text-align: center;
 }
 
-#memCost h4 {
-  margin-bottom: 1em;
-  font-size: 2.8rem;
-  font-weight: 500;
-  text-align: center;
+#memStrategy h5 span {
+  font-weight: 600;
+  color: #00690F;
 }
 
 #memCost table {
@@ -520,11 +533,9 @@
   font-size: 1.6rem;
 }
 
-#memProcedure h4 {
-  margin-bottom: 1em;
-  font-size: 2.8rem;
-  font-weight: 500;
-  text-align: center;
+#memCost table td:last-child {
+  font-weight: 600;
+  color: #00690F;
 }
 
 #memProcedure ul {
@@ -532,31 +543,54 @@
   align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 #memProcedure li {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: calc((100% - 10em) / 6);
-  margin-right: 2em;
-  padding: 2em 1em;
-  border: 1px solid #ccc;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin-right: 4em;
+  background-color: #F9F7F2;
 }
 
-#memProcedure li:last-child {
+#memProcedure li:nth-child(4n) {
   margin-right: 0;
 }
 
+#memProcedure li:nth-child(n + 5) {
+  margin-top: 4em;
+}
+
+#memProcedure li:after {
+  content: "\e5cc";
+  position: absolute;
+  top: 50%;
+  right: -1.1em;
+  transform: translateY(-50%);
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #00690F;
+}
+
+#memProcedure li:nth-child(4n):after {
+  display: none;
+}
+
+
 #memProcedure figure {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #memProcedure img {
-  height: 5em;
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -565,7 +599,6 @@
   margin-bottom: 0.2em;
   font-size: 1.6rem;
   text-align: center;
-  color: #999;
 }
 
 #memProcedure h5 {
@@ -573,13 +606,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   text-align: center;
-}
-
-#memContact h4 {
-  margin-bottom: 1em;
-  font-size: 2.8rem;
-  font-weight: 500;
-  text-align: center;
+  color: #00690F;
 }
 
 #memContact li {
@@ -692,14 +719,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 3;
-}
-
-#partBnr .bnrText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #partBnr p {
@@ -710,7 +731,7 @@
 }
 
 #partBnr h3 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -794,4 +815,55 @@
 
 #partContact .btn {
   padding: 0.5em 4em;
+}
+
+@media screen and (max-width: 1180px) {
+
+  /* membership */
+  #memProcedure li {
+    width: 13em;
+    height: 13em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* story */
+  #storyBnr {
+    height: 30vh;
+  }
+
+  /* menu */
+  #menuBnr {
+    height: 30vh;
+  }
+
+  /* store */
+  #storeBnr {
+    height: 30vh;
+  }
+
+  #storeLocation figure {
+    width: 30vw;
+  }
+
+  /* faq */
+  #faqBnr {
+    height: 30vh;
+  }
+
+  /* membership */
+  #memBnr {
+    height: 30vh;
+  }
+
+  #memStrategy li {
+    height: 20vh;
+  }
+
+  /* partner */
+  #partBnr {
+    height: 30vh;
+  }
+
 }
