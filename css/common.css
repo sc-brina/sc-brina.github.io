@@ -292,6 +292,10 @@ header.move-down {
     transition: all 0.3s;
 }
 
+header .inner {
+    width: 85vw;
+}
+
 header .navMenu {
     position: relative;
     display: flex;
