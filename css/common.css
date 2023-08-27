@@ -499,6 +499,10 @@ footer p::before {
     }
 
     /* header */
+    header .inner {
+        width: 95vw;
+    }
+
     header .logo img {
         width: 20vw;
     }
