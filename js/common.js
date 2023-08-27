@@ -13,7 +13,17 @@ $(function() {
   $(document).on("mouseout", ".nav > li", function() {
     $(this).find(".sub").hide();
   });
-})
+
+  $(document).on("click", ".mobMenu", function() {
+    $(".mobNavBg").fadeIn(100);
+    $(".navMenu").addClass("on");
+  });
+
+  $(document).on("click", ".mobNavBg", function() {
+    $(".mobNavBg").fadeOut(100);
+    $(".navMenu").removeClass("on");
+  });
+});
 // header
 
 const thisYear = document.querySelector('.this-year');

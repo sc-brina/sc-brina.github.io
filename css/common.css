@@ -197,7 +197,7 @@ body {
 }
 
 .inner {
-    width: 60vw;
+    width: 65vw;
     margin: 0 auto;
 }
 
@@ -283,7 +283,7 @@ header {
     width: 100vw;
     padding: 2em 0;
     transition: all 0.3s;
-    z-index: 99;
+    z-index: 999;
 }
 
 header.move-down {
@@ -304,6 +304,7 @@ header .logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
 }
 
 header .logo img {
@@ -391,6 +392,7 @@ header .tnb li.instagram:after {
 
 header .tnb li.instagram img {
     width: 1.3em;
+    filter: brightness(0) invert(1);
 }
 
 /* mobMenu */
@@ -468,11 +470,16 @@ footer p::before {
 #bottomBar form {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-left: auto;
 }
 
 #bottomBar input {
-    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#bottomBar input[name="contactMail"] {
+    margin-right: 0;
 }
 
 #bottomBar button {
@@ -518,39 +525,75 @@ footer p::before {
     }
 
     /* header */
-    header .nav,
-    header .tnb {
-        display: none;
+    header {
+        padding: 3em 0;
     }
 
-    header .mobNavBg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: none;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 2;
+    header .logo img {
+        width: 30vw;
     }
 
-    header .navMenu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: none;
-        width: 70%;
-        height: 100vh;
-        background-color: #fff;
-        z-index: 3;
+    header .nav {
+        display: block;
+    }
+
+    header .nav>li {
+        width: 100%;
     }
 
     header .nav>li>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1em 2em;
+        border-bottom: 1px solid #ccc;
         color: #000;
     }
 
+    header .sub {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+    }
+
+    header .sub>li>a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        padding-left: 3em;
+    }
+
+    header .tnb {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    header .tnb li {
+        margin: 0;
+    }
+
     header .tnb a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0.5em 2em;
+        font-size: 1.6rem;
         color: #000;
+    }
+
+    header .tnb li.instagram {
+        padding-left: 0;
+        margin-bottom: 2em;
+    }
+
+    header .tnb li.instagram img {
+        width: 2em;
+        filter: brightness(0) invert(0);
     }
 
     /* mobMenu */
@@ -566,15 +609,101 @@ footer p::before {
         color: #fff;
     }
 
-    .menuClose {
-        position: absolute;
-        top: 1em;
-        right: 1em;
+    header .mobNavBg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    header .mobNavBg.on {
         display: block;
     }
 
-    .menuClose span {
-        font-size: 4rem;
-        color: #fff;
+    header .navMenu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        width: 75%;
+        height: 100vh;
+        background-color: #fff;
+        transition: all 0.5s;
+        z-index: 3;
+    }
+
+    header .navMenu.on {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    /* layout */
+    html {
+        font-size: 8px;
+    }
+
+    br {
+        display: none;
+    }
+
+    /* section */
+    section {
+        margin-bottom: 4em;
+    }
+
+    /* header */
+    header {
+        padding: 2.3em 0;
+    }
+
+    header .logo img {
+        width: 50vw;
+    }
+
+    header .nav>li>a {
+        padding: 1em;
+    }
+
+    header .sub>li>a {
+        padding-left: 2em;
+    }
+
+    header .tnb li.instagram img {
+        width: 1.5em;
+    }
+
+    /* footer */
+    footer {
+        padding: 2em 0 12em;
+    }
+
+    /* bottomBar */
+    #bottomBar {
+        width: 100vw;
+    }
+
+    #bottomBar .inner {
+        display: block;
+    }
+
+    #bottomBar h3 {
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+
+    #bottomBar input {
+        width: calc((100% - 1em) / 3);
+    }
+
+    #bottomBar button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5em;
     }
 }

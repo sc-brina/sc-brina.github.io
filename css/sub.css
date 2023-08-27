@@ -37,8 +37,8 @@
 #storyBnr p {
   font-size: 2.4rem;
   font-weight: 500;
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 
 #storyBnr h3 {
@@ -61,6 +61,7 @@
   font-size: 2rem;
   text-align: center;
   line-height: 1.6;
+  word-break: keep-all;
 }
 
 #storyKorea p:last-child {
@@ -215,7 +216,7 @@
 }
 
 #menuList figure {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   overflow: hidden;
 }
 
@@ -224,7 +225,6 @@
 }
 
 #menuList p {
-  margin-bottom: 0.3em;
   font-size: 1.4rem;
   text-align: center;
   color: #555;
@@ -371,10 +371,6 @@
   font-weight: 500;
   text-align: center;
   color: #fff;
-}
-
-#faqList {
-  margin-top: 7em;
 }
 
 #faqList table {
@@ -551,8 +547,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 15em;
-  height: 15em;
+  width: 12em;
+  height: 12em;
   border-radius: 50%;
   margin-right: 4em;
   background-color: #F9F7F2;
@@ -579,10 +575,10 @@
   color: #00690F;
 }
 
-#memProcedure li:nth-child(4n):after {
+#memProcedure li:nth-child(4n):after,
+#memProcedure li:last-child:after {
   display: none;
 }
-
 
 #memProcedure figure {
   width: 100%;
@@ -817,12 +813,21 @@
   padding: 0.5em 4em;
 }
 
+@media screen and (max-width: 1400px) {
+
+  /* membership */
+  #memProcedure li {
+    width: 14em;
+    height: 14em;
+  }
+}
+
 @media screen and (max-width: 1180px) {
 
   /* membership */
   #memProcedure li {
-    width: 13em;
-    height: 13em;
+    width: 12em;
+    height: 12em;
   }
 }
 
@@ -833,14 +838,26 @@
     height: 30vh;
   }
 
+  #storyBnr h3 {
+    font-size: 6rem;
+  }
+
   /* menu */
   #menuBnr {
     height: 30vh;
   }
 
+  #menuBnr h3 {
+    font-size: 6rem;
+  }
+
   /* store */
   #storeBnr {
     height: 30vh;
+  }
+
+  #storeBnr h3 {
+    font-size: 6rem;
   }
 
   #storeLocation figure {
@@ -852,9 +869,71 @@
     height: 30vh;
   }
 
+  #faqBnr h3 {
+    font-size: 6rem;
+  }
+
   /* membership */
   #memBnr {
     height: 30vh;
+  }
+
+  #memBnr h3 {
+    font-size: 6rem;
+  }
+
+  #memStrategy li {
+    height: 25vh;
+  }
+
+  #memProcedure li {
+    width: 11em;
+    height: 11em;
+  }
+
+  /* partner */
+  #partBnr {
+    height: 30vh;
+  }
+
+  #partBnr h3 {
+    font-size: 6rem;
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+
+  /* story */
+  #storyBnr {
+    margin-top: 6em;
+  }
+
+  #storyRolling .swiper-horizontal>.swiper-pagination-bullets,
+  #storyRolling .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #storyRolling .swiper-pagination-custom,
+  #storyRolling .swiper-pagination-fraction {
+    bottom: -3vh;
+  }
+
+  /* menu */
+  #menuBnr {
+    margin-top: 8em;
+  }
+
+  /* store */
+  #storeBnr {
+    margin-top: 8em;
+  }
+
+  /* faq */
+  #faqBnr {
+    margin-top: 8em;
+  }
+
+  /* membership */
+  #memBnr {
+    margin-top: 8em;
   }
 
   #memStrategy li {
@@ -863,7 +942,177 @@
 
   /* partner */
   #partBnr {
+    margin-top: 8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* membership */
+  #memProcedure li {
+    width: 10em;
+    height: 10em;
+    margin-right: 3em;
+  }
+
+  #memProcedure li:after {
+    right: -1em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  /* story */
+  #storyBnr {
+    height: 25vh;
+    margin-top: 4.5em;
+  }
+
+  #storyBnr p {
+    font-size: 2rem;
+  }
+
+  #storyBnr h3 {
+    font-size: 4.8rem;
+  }
+
+  /* menu */
+  #menuBnr {
+    height: 25vh;
+    margin-top: 6em;
+  }
+
+  #menuBnr p {
+    font-size: 2rem;
+  }
+
+  #menuBnr h3 {
+    font-size: 4.8rem;
+  }
+
+  #menuBtn {
+    margin-bottom: 2em;
+  }
+
+  #menuBtn li a {
+    font-size: 1.6rem;
+  }
+
+  #menuList li {
+    width: calc((100% - 1em) / 2);
+    margin-right: 1em;
+  }
+
+  #menuList li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #menuList li:nth-child(n + 3) {
+    margin-top: 2em;
+  }
+
+  #menuList p {
+    font-size: 1.6rem;
+  }
+
+  #menuList h5 {
+    font-size: 2rem;
+  }
+
+  /* store */
+  #storeBnr {
+    height: 25vh;
+    margin-top: 6em;
+  }
+
+  #storeBnr p {
+    font-size: 2rem;
+  }
+
+  #storeBnr h3 {
+    font-size: 4.8rem;
+  }
+
+  #storeLocation ul>li {
+    display: block;
+  }
+
+  #storeLocation figure {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  /* faq */
+  #faqBnr {
+    height: 25vh;
+    margin-top: 6em;
+  }
+
+  #faqBnr p {
+    font-size: 2rem;
+  }
+
+  #faqBnr h3 {
+    font-size: 4.8rem;
+  }
+
+  #faqAnswer {
+    margin-top: 7em;
+  }
+
+  /* membership */
+  #memBnr {
+    height: 25vh;
+    margin-top: 6em;
+  }
+
+  #memBnr p {
+    font-size: 2rem;
+  }
+
+  #memBnr h3 {
+    font-size: 4.8rem;
+  }
+
+  #memBtn li {
+    font-size: 2.2rem;
+  }
+
+  #memStrategy li {
+    width: calc((100% - 1em) / 2);
     height: 30vh;
+    margin-right: 1em;
+  }
+
+  #memStrategy li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #memStrategy li:nth-child(n + 3) {
+    margin-top: 1em;
+  }
+
+  #memStrategy h5 {
+    width: 80%;
+    margin: 0 auto;
+    word-break: keep-all;
+  }
+
+  #memProcedure li {
+    width: 11em;
+    height: 11em;
+  }
+
+  #memProcedure li:nth-child(2n):after {
+    display: none;
+  }
+
+  #memProcedure li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  #memProcedure li:nth-child(n + 3) {
+    margin-top: 2em;
   }
 
 }
