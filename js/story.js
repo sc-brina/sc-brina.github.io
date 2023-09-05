@@ -3,7 +3,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 
 var swiper = new Swiper("#storyRolling .swiper", {
-  slidesPerView: 3.5,
+  slidesPerView: 4.5,
   spaceBetween: 10,
   loop: true,
   loopAdditionalSlides: 1,
@@ -12,8 +12,11 @@ var swiper = new Swiper("#storyRolling .swiper", {
     clickable: true,
   },
   breakpoints: {
+    1921: {
+      slidesPerView: 5.5,
+    },
     641: {
-      slidesPerView: 3.5,
+      slidesPerView: 4.5,
     },
     0: {
       slidesPerView: 2.5,

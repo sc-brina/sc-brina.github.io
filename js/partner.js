@@ -13,7 +13,7 @@ window.onload = function () {
       event.preventDefault();
       $("#loading").show();
       this.contact_number.value = (Math.random() * 100000) | 0;
-      emailjs.sendForm("service_gz4h42j", "contact_basic", this).then(
+      emailjs.sendForm("service_gz4h42j", "contact_partner", this).then(
         function () {
           alert("제안이 접수 되었습니다.");
           $("#loading").hide();
