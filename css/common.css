@@ -312,7 +312,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 14vw;
+  width: 20em;
 }
 
 header .nav {
@@ -684,7 +684,7 @@ footer p::before {
 
   /* footer */
   footer {
-    padding: 2em 0 12em;
+    padding: 2em 0 4em;
   }
 
   /* bottomBar */
