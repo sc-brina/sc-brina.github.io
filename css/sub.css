@@ -180,8 +180,8 @@
 }
 
 #menuBtn li.on {
-  border: 1px solid #00690f;
-  background-color: #00690f;
+  border: 1px solid #222;
+  background-color: #222;
 }
 
 #menuBtn li a {
@@ -562,10 +562,10 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: calc((65vw - 12em) / 4);
-  height: calc((65vw - 12em) / 4);
+  width: calc((65vw - 24em) / 4);
+  height: calc((65vw - 24em) / 4);
   border-radius: 50%;
-  margin-right: 4em;
+  margin-right: 8em;
   background-color: #f9f7f2;
 }
 
@@ -581,11 +581,11 @@
   content: "\e5cc";
   position: absolute;
   top: 50%;
-  right: -1.1em;
+  right: -1.3em;
   transform: translateY(-50%);
   font-family: "Material Symbols Outlined";
   display: inline-block;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 600;
   color: #00690f;
 }
