@@ -46,6 +46,55 @@
   background-color: #00690f;
 }
 
+/* picnic */
+#picnic .inner {
+  display: flex;
+  justify-content: center;
+}
+
+#picnic .picnicImg {
+  width: 40%;
+  margin-right: 2em;
+}
+
+#picnic .picnicImg img {
+  width: 100%;
+}
+
+#picnic .picnicText h3 {
+  margin-bottom: 0.3em;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#picnic .picnicText h4 {
+  margin-bottom: 0.5em;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+#picnic .picnicText > p {
+  margin-bottom: 1em;
+  font-size: 1.6rem;
+  color: #666;
+}
+
+#picnic .picnicText a {
+  display: flex;
+  align-items: center;
+}
+
+#picnic .picnicText a p {
+  margin-right: 0.5em;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#picnic .picnicText a span {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 /* sandwich */
 #sandwich .inner {
   display: flex;
@@ -98,6 +147,24 @@
   width: 100%;
 }
 
+/* instagram */
+#instagram .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instagram a img {
+  width: 3em;
+  margin: 0 auto 0.5em;
+}
+
+#instagram a p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #999;
+}
+
 @media screen and (max-width: 1400px) {
   /* main */
   #main {
@@ -138,8 +205,21 @@
     bottom: -3vh;
   }
 
-  /* sandwich */
+  /* picnic */
+  #picnic .inner {
+    display: block;
+  }
 
+  #picnic .picnicText {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  #picnic .picnicImg {
+    width: 100%;
+  }
+
+  /* sandwich */
   #sandwich .inner {
     display: block;
   }

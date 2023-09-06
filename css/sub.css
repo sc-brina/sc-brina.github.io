@@ -125,7 +125,7 @@
 #menuBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_home_main_02.jpg) no-repeat center / cover;
+  background: url(/img/img_menu_bnr.jpg) no-repeat center / cover;
 }
 
 #menuBnr .inner:after {
