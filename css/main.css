@@ -30,6 +30,8 @@
 #main img {
   position: absolute;
   bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
 }
 
@@ -197,6 +199,11 @@
     height: 60vh;
   }
 
+  #main img {
+    top: 0;
+    bottom: auto;
+  }
+
   /* instagram */
   #instagram .instagramSwiper figure {
     height: 16em;
@@ -225,6 +232,9 @@
   }
 
   #main img {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
     width: auto;
     height: 100%;
   }
@@ -262,5 +272,16 @@
 
   #sandwich .sandwichImg {
     width: 100%;
+  }
+
+  /* instagram */
+  #instagram .instagramSwiper {
+    width: 95vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #instagram .instagramSwiper figure {
+    height: 10em;
   }
 }

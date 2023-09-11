@@ -374,10 +374,6 @@
   color: #fff;
 }
 
-#faqList {
-  min-height: 20vh;
-}
-
 #faqList table {
   width: 100%;
 }
@@ -923,8 +919,8 @@
 @media screen and (max-width: 1400px) {
   /* membership */
   #memProcedure li {
-    width: calc((90vw - 12em) / 4);
-    height: calc((90vw - 12em) / 4);
+    width: calc((90vw - 24em) / 4);
+    height: calc((90vw - 24em) / 4);
   }
 }
 
@@ -1031,8 +1027,13 @@
 
   /* membership */
   #memProcedure li {
-    width: calc((95vw - 12em) / 4);
-    height: calc((95vw - 12em) / 4);
+    width: calc((95vw - 20em) / 4);
+    height: calc((95vw - 20em) / 4);
+    margin-right: 6em;
+  }
+
+  #memProcedure li:after {
+    right: -1.1em;
   }
 
   /* partner */
@@ -1187,8 +1188,8 @@
   }
 
   #memProcedure li {
-    width: calc((95vw - 4em) / 2);
-    height: calc((95vw - 4em) / 2);
+    width: calc((95vw - 8em) / 2);
+    height: calc((95vw - 8em) / 2);
   }
 
   #memProcedure li:nth-child(2n):after {
