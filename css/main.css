@@ -358,8 +358,8 @@
   }
 
   #kitchen .kitchenImg img {
-    width: calc((100% - 4em) / 3);
-    margin-right: 2em;
+    width: calc((100% - 2em) / 3);
+    margin-right: 1em;
   }
 
   /* sandwich */

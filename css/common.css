@@ -529,6 +529,11 @@ footer p::before {
   html {
     font-size: 9px;
   }
+
+  /* popup */
+  #pop_contents {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -700,27 +705,8 @@ footer p::before {
     padding: 2em 0 4em;
   }
 
-  /* bottomBar */
-  #bottomBar {
-    width: 100vw;
-  }
-
-  #bottomBar .inner {
-    display: block;
-  }
-
-  #bottomBar h3 {
-    margin-right: 0;
-    margin-bottom: 0.5em;
-  }
-
-  #bottomBar input {
-    width: calc((100% - 1em) / 3);
-  }
-
-  #bottomBar button {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0.5em;
+  /* popup */
+  #pop_contents {
+    width: 95vw;
   }
 }
