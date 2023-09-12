@@ -446,48 +446,61 @@ footer p::before {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* bottomBar */
-#bottomBar {
+/* popup */
+#pop_wrap {
   position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  display: none;
   width: 100%;
-  padding: 1em 0;
-  background-color: #333;
-  z-index: 99;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
 }
 
-#bottomBar .inner {
+#pop_wrap img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#pop_wrap img:last-child {
+  margin-bottom: 0;
+}
+
+#pop_contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+}
+
+#pop_header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
 }
 
-#bottomBar h3 {
-  margin-right: 2em;
+#pop_header h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
 }
 
-#bottomBar form {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: auto;
+#pop_header .pop_close span {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
 }
 
-#bottomBar input {
-  margin-right: 0.5em;
-}
-
-#bottomBar input[name="contactMail"] {
-  margin-right: 0;
-}
-
-#bottomBar button {
-  margin-left: 0.5em;
+#pop_body {
+  width: 100%;
+  height: 70vh;
+  padding: 2em;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* ractive */

@@ -19,14 +19,6 @@
   overflow: hidden;
 }
 
-/* #main img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-} */
-
 #main img {
   position: absolute;
   bottom: -10%;
@@ -58,15 +50,27 @@
 #picnic .inner {
   display: flex;
   justify-content: center;
+  height: 60vh;
+  overflow: hidden;
 }
 
 #picnic .picnicImg {
-  width: 40%;
+  position: relative;
+  min-width: fit-content;
+  height: 100%;
   margin-right: 2em;
+  overflow: hidden;
 }
 
 #picnic .picnicImg img {
-  width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+#picnic .picnicText {
+  position: relative;
+  width: 40%;
+  height: 100%;
 }
 
 #picnic .picnicText h3 {
@@ -81,7 +85,7 @@
   font-weight: 500;
 }
 
-#picnic .picnicText > p {
+#picnic .picnicText h5 {
   margin-bottom: 1em;
   font-size: 1.6rem;
   color: #666;
@@ -95,7 +99,7 @@
 #picnic .picnicText a p {
   margin-right: 0.5em;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #picnic .picnicText a span {
@@ -103,14 +107,80 @@
   font-weight: 400;
 }
 
-/* sandwich */
-#sandwich .inner {
-  display: flex;
-  justify-content: center;
+#picnic .picnicText img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  z-index: -1;
 }
 
+/* kitchen */
+#kitchen {
+  position: relative;
+  width: 100vw;
+  padding: 4em 0;
+  background: url(/img/img_kitchen_main_01.jpg) no-repeat center / cover;
+}
+
+#kitchen:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+#kitchen .inner {
+  position: relative;
+  z-index: 3;
+}
+
+#kitchen .kitchenText {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+#kitchen .kitchenText h4 {
+  margin-bottom: 0.5em;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+#kitchen .kitchenText h5 {
+  margin-bottom: 1em;
+  font-size: 1.6rem;
+  color: #ddd;
+}
+
+#kitchen .kitchenImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(45vw + 4em);
+  margin: 2em auto 0;
+  padding-top: 2em;
+  border-top: 2px solid #fff;
+}
+
+#kitchen .kitchenImg img {
+  width: 15vw;
+  margin-right: 2em;
+}
+
+#kitchen .kitchenImg img:last-child {
+  margin-right: 0;
+}
+
+/* sandwich */
 #sandwich .sandwichText {
   margin-right: 2em;
+  text-align: center;
 }
 
 #sandwich .sandwichText h3 {
@@ -125,7 +195,7 @@
   font-weight: 500;
 }
 
-#sandwich .sandwichText > p {
+#sandwich .sandwichText h5 {
   margin-bottom: 1em;
   font-size: 1.6rem;
   color: #666;
@@ -134,12 +204,14 @@
 #sandwich .sandwichText a {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 #sandwich .sandwichText a p {
   margin-right: 0.5em;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #sandwich .sandwichText a span {
@@ -147,12 +219,13 @@
   font-weight: 400;
 }
 
-#sandwich .sandwichImg {
-  width: 40%;
+#sandwich .sandwichImg img {
+  width: 50%;
+  margin: 0 auto 2em;
 }
 
-#sandwich .sandwichImg img {
-  width: 100%;
+#sandwich .sandwichImg img:last-child {
+  margin-bottom: 0;
 }
 
 /* instagram */
@@ -221,6 +294,11 @@
   #main .swiper-pagination-fraction {
     bottom: -3vh;
   }
+
+  /* picnic */
+  #picnic .inner {
+    height: 45vh;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -248,28 +326,52 @@
   /* picnic */
   #picnic .inner {
     display: block;
-  }
-
-  #picnic .picnicText {
-    margin-right: 0;
-    margin-bottom: 1em;
+    height: auto;
+    overflow: visible;
   }
 
   #picnic .picnicImg {
+    display: none;
+  }
+
+  #picnic .picnicText {
     width: 100%;
-  }
-
-  /* sandwich */
-  #sandwich .inner {
-    display: block;
-  }
-
-  #sandwich .sandwichText {
     margin-right: 0;
+  }
+
+  #picnic .picnicText a {
     margin-bottom: 1em;
   }
 
-  #sandwich .sandwichImg {
+  #picnic .picnicText img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    height: auto;
+  }
+
+  /* kitchen */
+  #kitchen .kitchenImg {
+    width: 100%;
+  }
+
+  #kitchen .kitchenImg img {
+    width: calc((100% - 4em) / 3);
+    margin-right: 2em;
+  }
+
+  /* sandwich */
+  #sandwich .sandwichText {
+    text-align: right;
+  }
+
+  #sandwich .sandwichText a {
+    justify-content: flex-end;
+  }
+
+  #sandwich .sandwichImg img {
     width: 100%;
   }
 

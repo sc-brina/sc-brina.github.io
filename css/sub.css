@@ -299,6 +299,7 @@
 #storeLocation figure {
   width: 20vw;
   margin-right: 3em;
+  cursor: pointer;
 }
 
 #storeLocation img {
