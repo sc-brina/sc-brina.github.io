@@ -93,6 +93,16 @@
     <!-- jsEmail -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
+    <!-- map -->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=23349be5e487195112b551e3413717b2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=LIBRARY"
+    ></script>
+
     <!-- style -->
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/sub.css" />
@@ -175,26 +185,67 @@
       <section id="storeLocation">
         <ul class="inner">
           <li>
-            <figure class="open_hongdae">
-              <img src="/img/img_store_hongdae.jpg" alt="홍대 본점" />
-            </figure>
-            <div class="text_area">
-              <h4>홍대 본점</h4>
-              <ol>
-                <li>
-                  <span class="material-symbols-outlined">location_on</span>
-                  <p>서울시 마포구 와우산로29바길 19, 1층</p>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined">call</span>
-                  <p>0507-1436-0733</p>
-                </li>
-                <li>
-                  <span class="material-symbols-outlined">schedule</span>
-                  <p>매일 11:00 - 21:00</p>
-                </li>
-              </ol>
+            <div class="map_wrap">
+              <div id="map_hongdae"></div>
             </div>
+            <article>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <img
+                    src="/img/img_store_hongdae_02.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_03.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_04.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_05.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_06.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_07.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                  <img
+                    src="/img/img_store_hongdae_08.jpg"
+                    alt="홍대 본점"
+                    class="swiper-slide"
+                  />
+                </div>
+              </div>
+              <div class="text_area">
+                <h4>홍대 본점</h4>
+                <ol>
+                  <li>
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>서울시 마포구 와우산로29바길 19, 1층</p>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">call</span>
+                    <p>0507-1436-0733</p>
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">schedule</span>
+                    <p>매일 10:00 - 20:00</p>
+                  </li>
+                </ol>
+              </div>
+            </article>
           </li>
         </ul>
       </section>
@@ -216,7 +267,7 @@
       <!-- // footer -->
     </div>
 
-    <div id="pop_wrap" class="pop_hongdae">
+    <!-- <div id="pop_wrap" class="pop_hongdae">
       <div id="pop_contents">
         <div id="pop_header">
           <h2>홍대 본점</h2>
@@ -236,6 +287,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
